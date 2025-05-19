@@ -23,7 +23,6 @@ export function SignIn() {
 
   async function handleSignIn(data: SignInForm) {
     try {
-      console.log(data);
 
       await new Promise(resolve => setTimeout(resolve, 2000));
 
@@ -39,10 +38,8 @@ export function SignIn() {
     <>
       <Helmet title='Login' />
       <div className='p-8'>
-        <Button asChild>
-          <Link to='/sign-up' className='absolute right-8 top-8'>
-            Novo estabelecimento
-          </Link>
+        <Button asChild className='absolute top-8 right-8' variant='ghost'>
+          <Link to='/sign-up'>Novo estabelecimento</Link>
         </Button>
 
         <div className='flex w-[350px] flex-col justify-center gap-6'>
