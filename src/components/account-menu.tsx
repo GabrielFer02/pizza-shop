@@ -15,7 +15,7 @@ export function AccountMenu() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          className='flex cursor-pointer items-center gap-2 select-none'
+          className='flex items-center gap-2 select-none'
           variant='outline'
         >
           Pizza Shop
